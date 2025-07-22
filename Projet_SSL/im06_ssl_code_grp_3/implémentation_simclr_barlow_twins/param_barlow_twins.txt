@@ -1,0 +1,212 @@
+354583
+batch size 128
+lambda 5e-3
+proj_dim 4196
+Accuracy 0.6895241737365723 | F1 Score 0.6895241737365723
+
+
+355000
+batch size 128
+lambda 5e-3
+proj_dim 4096
+Accuracy 0.8484757542610168 | F1 Score 0.8484757542610168
+
+355004
+batch size 128
+lambda 5e-3
+proj_dim 8192
+Accuracy 0.7755122780799866 | F1 Score 0.7755122184753418
+============================================================
+RÉSUMÉ DES PERFORMANCES
+============================================================
+Temps moyen par batch: 1.454s
+Temps transformations: 0.202s (13.9%)
+Temps forward pass:    0.244s (16.8%)
+Temps backward pass:   0.998s (68.7%)
+
+Loss Evolution:
+Initial: 9704.1480
+Final:   3825.5710
+Change:  -60.6%
+
+Temps par époch:
+Moyenne: 342.4s
+Total:   23967.9s
+
+
+
+
+
+
+
+
+355005
+batch size 128
+lambda 5e-3
+proj_dim 4096
+Accuracy 0.8484757542610168 | F1 Score 0.8484757542610168
+
+
+
+355093
+batch size 128
+lambda 5e-3
+proj_dim 4096
+Accuracy 0.8484757542610168 | F1 Score 0.8484757542610168
+============================================================
+RÉSUMÉ DES PERFORMANCES
+============================================================
+Temps moyen par batch: 0.939s
+Temps transformations: 0.196s (20.9%)
+Temps forward pass:    0.243s (25.8%)
+Temps backward pass:   0.499s (53.1%)
+
+Loss Evolution:
+Initial: 4118.2332
+Final:   1109.6754
+Change:  -73.1%
+
+Temps par époch:
+Moyenne: 221.4s
+Total:   15501.0s
+
+
+
+
+
+355095
+batch size 256
+lambda 5e-3
+proj_dim 4096
+Evaluation terminée | Accuracy 0.835382342338562 | F1 Score 0.8353822827339172
+
+
+
+355096
+batch size 64
+lambda 1e-3
+proj_dim 4096
+Evaluation terminée | Accuracy 0.9157421588897705 | F1 Score 0.9157420992851257
+============================================================
+RÉSUMÉ DES PERFORMANCES
+============================================================
+Temps moyen par batch: 0.612s
+Temps transformations: 0.111s (18.1%)
+Temps forward pass:    0.149s (24.4%)
+Temps backward pass:   0.351s (57.2%)
+
+Loss Evolution:
+Initial: 3582.3818
+Final:   471.5082
+Change:  -86.8%
+
+Temps par époch:
+Moyenne: 288.1s
+Total:   20166.6s
+
+
+
+
+
+355098
+batch size 128
+lambda 1e-3
+proj_dim 4096
+Evaluation terminée | Accuracy 0.8704648017883301 | F1 Score 0.8704647421836853
+============================================================
+RÉSUMÉ DES PERFORMANCES
+============================================================
+Temps moyen par batch: 1.052s
+Temps transformations: 0.205s (19.5%)
+Temps forward pass:    0.238s (22.6%)
+Temps backward pass:   0.608s (57.7%)
+
+Loss Evolution:
+Initial: 3473.4906
+Final:   358.6893
+Change:  -89.7%
+
+Temps par époch:
+Moyenne: 248.0s
+Total:   17359.4s
+
+
+
+
+
+
+
+355099
+batch size 128
+lambda 1e-2
+proj_dim 4096
+Evaluation terminée | Accuracy 0.8691654205322266 | F1 Score 0.8691654205322266
+============================================================
+RÉSUMÉ DES PERFORMANCES
+============================================================
+Temps moyen par batch: 1.053s
+Temps transformations: 0.206s (19.6%)
+Temps forward pass:    0.237s (22.5%)
+Temps backward pass:   0.608s (57.7%)
+
+Loss Evolution:
+Initial: 4857.8041
+Final:   1916.5396
+Change:  -60.5%
+
+Temps par époch:
+Moyenne: 248.0s
+Total:   17362.8s
+
+
+
+
+355372
+batch size 128
+lambda 1e-4
+proj_dim 4096
+Evaluation terminée | Accuracy 0.8749625086784363 | F1 Score 0.8749625086784363
+============================================================
+RÉSUMÉ DES PERFORMANCES
+============================================================
+Temps moyen par batch: 1.057s
+Temps transformations: 0.207s (19.6%)
+Temps forward pass:    0.237s (22.5%)
+Temps backward pass:   0.611s (57.8%)
+
+Loss Evolution:
+Initial: 3309.9048
+Final:   96.3577
+Change:  -97.1%
+
+Temps par époch:
+Moyenne: 249.0s
+Total:   17427.0s
+
+
+
+
+
+
+355377
+batch size 256
+lambda 1e-3
+proj_dim 4096 
+Evaluation terminée | Accuracy 0.9079460501670837 | F1 Score 0.9079460501670837
+
+============================================================
+RÉSUMÉ DES PERFORMANCES
+============================================================
+Temps moyen par batch: 1.840s
+Temps transformations: 0.664s (36.1%)
+Temps forward pass:    0.354s (19.2%)
+Temps backward pass:   0.821s (44.6%)
+
+Loss Evolution:
+Initial: 3422.8257
+Final:   321.9010
+Change:  -90.6%
+
+Temps par époch:
+Moyenne: 217.7s
+Total:   15240.5s

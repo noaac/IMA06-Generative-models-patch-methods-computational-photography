@@ -1,0 +1,39 @@
+Pour run sur slurm et synchro après sur wandb.
+
+1. Rendre le .sh executable
+    chmod +x sync_wandb.sh
+
+2. Se connecter en ssh à la machine avec slurm
+    ssh username@cluster
+    cd path/to/im06-ssl/w2
+
+3. Envoyer le job avec :
+    sbatch job_script.sh
+Et noter le JOB ID qui s'affiche.
+
+4. Surveiller que tou va bien en :
+    - Vérifiant le statut
+        squeue -u $USER
+    - Surveillant les logs en temps réel
+        tail -f simclr_train_job_*.out
+    - Voir les erreurs si problème
+        tail -f simclr_train_job_*.err
+Le job en cours ressemblera à :
+JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+123456      P100 simclr_t username  R      12:34      1 gpu-node-01
+
+5. Une fois le job terminé, vérifier qu'il n'est plus dans la liste avec :
+    squeue -u $USER  (Doit être vide)
+Et vérifier que l'archive a été créée
+    ls -la simclr_results_job_123456.tar.gz
+On peut aussi voir le résumé final avec :
+    tail simclr_train_job_123456.out
+
+6. Ensuite télécharger en local l'archive :
+    scp username@cluster:path/to/simclr_results_job_123456.tar.gz ~/Downloads/
+
+7. Et enfin synchro WandB avec le script sync_wandb.sh:
+    tar -xzf simclr_results_job_123456.tar.gz
+    chmod +x sync_wandb.sh
+    wandb login  (Si pas encore fait)
+    ./sync_wandb.sh
